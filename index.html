@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JarvisCamp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="wrapper">
+            <div class="logo"><a href="">JarvisCamp</a></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="signup.html" class="tbl-merah">Sign Up</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- untuk home -->
+        <div class="wrapper">
+            <section id="home">
+            <br>
+            <h1>JarvisCamp</h1>
+            <br>
+            <h2>Social Media Developer Santai Berkualitas</h2>
+            <br>
+            <p>Belajar dan Berbagi agar hidup ini semakin santai berkualitas</p>
+            <br>
+            <h3>Benefit Join di JarvisCamp</h3>
+            <br>
+            <ul>
+                <li>Mendapatkan motivasi dari sesama developer</li>
+                <li>Sharing knowlage dari para mastah Jarvis</li>
+                <li>Dibuat oleh calon web developer terbaik</li>
+            </ul>
+            <br>
+            <h3>Cara Bergabung ke JarvisCamp</h3>
+            <br>
+            <ol>
+                <li>Mengunjungi Website ini</li>
+                <li>Mendaftar di <a href="signup.html">Form Sign Up</a></li>
+                <li>Selesai!</li>
+            </ol>
+        </div>
+        </section>
+        <!-- untuk about -->
+        <div class="wrapper">
+            <section id="about">
+            <br>
+            <h1>About JarvisCamp</h1>
+            <br>
+            <p>JarvisCamp adalah pembelajaran online dengan mentor yang berkualitas dan telah terstruktur dengan kolaborasi jarak jauh </p>
+            <br>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut, laudantium optio. Deleniti unde impedit iste quam totam pariatur illo rem incidunt dolore fuga, velit quod, possimus ipsum, magnam aperiam et dignissimos dolores atque dolorum a laboriosam exercitationem aliquam? Similique, tenetur.</p>
+        </div>
+       <div id="contact">
+        <div class="wrapper">
+            <div class="footer">
+                <div class="footer-section">
+                    <h3>About</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, ea!</p>
+                </div>
+            </div>
+        </div>
+       </div>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Conditional HTML</title>
+</head>
+
+<body>
+    <h1>Berlatih Kondisional</h1>
+
+    <h3>Masukkan nama dan peranmu!</h3>
+    <form action="#" id="formConditional">
+        <input type="text" id="name" placeholder="Isi nama di sini">
+        <input type="text" id="role" placeholder="Isi peran di sini">
+        <input type="submit" value="Mulai Permainan">
+    </form>
+
+    <h3>Jawaban dari console game: </h3>
+    <div id="jawaban">
+
+    </div>
+</body>
+
+<script>
+    var form = document.getElementById("formConditional")
+    var jawaban = document.getElementById("jawaban")
+
+    form.addEventListener("submit", function(e) {
+        e.preventDefault()
+
+        /* 
+            ATURAN PERMAINAN 
+            // Output untuk Input nama = '' dan peran = ''
+            // => "Nama harus diisi!"
+    
+            //Output untuk input jika nama != '' dan peran = ''
+            // => "Halo Mikael, Pilih peranmu untuk memulai game!"
+    
+            //Output untuk Input jika nama != '' dan peran 'Penyihir'
+            // => "Selamat datang di Dunia Werewolf, Nina"
+            // => "Halo Penyihir Nina, kamu dapat melihat siapa yang menjadi Werewolf!"
+    
+            //Output untuk Input jika nama != '' dan peran 'Werewolf'
+            // => "Selamat datang di Dunia Werewolf, Danu"
+            // "Halo Werewolf Danu, kamu dapat memilih siapa yang akan kamu makan malam ini!"
+    
+            //Output untuk Input jika nama != '' dan peran 'Rakjel'
+            // => "Selamat datang di Dunia Werewolf, Zero"
+            // => "Halo Rakjel Zero, Kamu menjadi rakyat jelata "
+    
+            PETUNJUK MENGERJAKAN
+            1. Buat Kondisional agar output dari konsol sesuai yang diharapkan
+            2. masukkan lah jawaban dari kondisi yang diberikan oleh User ke dalam variabel jawabanKonsol
+        */
+
+        // Tuliskan Code kamu di sini
+        var name = document.getElementById("name").value
+        var role = document.getElementById("role").value
+            // buatlah kondisional berdasarkan dua variabel di atas yaitu name dan role, ketentuannya dapat dibaca di atas
+
+
+
+        var jawabanKonsol // = jawaban dari kondisional di-assign di sini
+            // Code Sampai sini
+
+        jawaban.innerHTML = jawabanKonsol
+    })
+</script>
+
+</html>
